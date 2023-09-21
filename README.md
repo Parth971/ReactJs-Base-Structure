@@ -109,20 +109,19 @@ Create an `App.js` file inside the `/src/components` directory:
 
 ```js
 import 'assets/css/base.css';
-import navItems from 'constants/navItems';
-import { AIPredictionPage } from "pages/AIPredictionPage";
+import { HomePage } from "pages/HomePage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  return (
-    <div>
-      <Router>
-        <Routes>
-          <Route path="/" Component={HomePage} />
-        </Routes>
-      </Router>
-    </div>
-  );
+    return (
+        <div>
+            <Router>
+                <Routes>
+                    <Route path="/" Component={HomePage} />
+                </Routes>
+            </Router>
+        </div>
+    );
 }
 
 export default App;
